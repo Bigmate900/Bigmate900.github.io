@@ -1,0 +1,881 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+ }
+
+ html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    /*background-image: linear-gradient(gray,blue);*/
+    background-color: #004a99;
+
+}
+
+nav{
+    grid-area: menu;
+    border-bottom: 1px gray solid;
+}
+
+.nav-link{
+   margin-left: 5px;
+   font-weight: bold;
+   font-size: larger;
+   display: inline-block;
+   position: relative;
+   color: white;
+}
+
+.navbar-nav .nav-link.active{
+    color: #0087ca;
+}
+
+.nav-link:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: blue;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+div>a{
+    text-align: center;
+}
+
+
+.Center{
+    margin-left: 40%;
+}
+
+.image{
+    border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+    margin-top: 100px;
+    margin-left: 100px;
+    transform: rotate(-10deg);
+}
+
+.image2{
+    border-radius: 50px;
+    box-shadow: 2px 10px 30px rgba(255, 255, 255, 0.3);
+    margin-top: 200px;
+    margin-left: -30px;
+    transform: rotate(10deg);
+}
+
+#map{
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+#szoveg{
+    color: white;
+    font-family: myFirstFont;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    box-shadow: 0 2px 30px rgba(255, 255, 255, 0.3);
+
+
+}
+
+.footer{
+    background-color: #0087ca;
+    display: block;
+}
+
+.card1{
+    width: 300px;
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+    padding-right: 100px;
+}
+
+.card2{
+    width: 300px;
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+}
+
+.card3{
+    width: 300px;
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+}
+
+.navbar{
+    opacity: 0.75;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    z-index: 1000;
+
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+
+.navbar-brand{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style:italic ;
+    text-shadow: 1px 2px gray;
+    color: white;
+}
+
+.navbar-brand:hover{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style:italic ;
+    text-shadow: 1px 2px gray;
+    color: white;
+
+    cursor:auto;
+}
+
+.containera{
+    text-align: center;
+    padding: 25px 0px;
+    border-radius: 25px;
+    width: 25%;
+    display: block;
+    margin-right: 250px;
+
+    grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'footer footer footer footer footer footer';
+
+}
+
+.box{
+    background-color: white;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flexbox;
+}
+
+#card1{
+    background-color: #0087ca;
+    display: flex;
+}
+
+#card2{
+    background-color: #0087ca;
+    display: flex;
+}
+
+#card3{
+    background-color: #0087ca;
+    display: flex;
+}
+
+#card4{
+    background-color: #0087ca;
+    display: flex;
+}
+
+table{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 500px;
+
+    border: 1px solid black;
+    box-shadow: 2px 3px gray;
+    border-radius: 15px;
+    box-shadow: 0 2px 30px rgba(255, 255, 255, 0.3);
+    margin-top: 25px;
+
+    opacity: 0.75;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: flexbox;
+}
+
+.cimek{
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+
+    text-decoration: underline;
+}
+
+.leiras{
+    max-width: 450px;
+    text-align: center;
+
+    color: white;
+}
+
+.focim{
+    text-align: justify;
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+.szolgaltatasAlcim{
+     margin-left: 10px;
+}
+
+.Kapcsolat{
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    text-shadow: 2px 3px black;
+    font-weight: bold;
+}
+
+.HeadIMG{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin-top: -190px;
+    border-bottom: 1px solid black;
+    height: 1055px;
+}
+
+.szolgaltatas-Tobb{
+    text-decoration: none;
+    color: gray;
+    font-size: large;
+    
+}
+.BOX{
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: -350px;
+    color: white;
+
+}
+
+.HeadIMGeler{
+  margin-top: -190px;
+  width: 100%;
+  height: 650px;
+}
+
+.BOX>p{
+    color: gray;
+    margin-top: -10px;
+}
+
+#kor{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+}
+
+#kor:hover{
+    width: 120px;
+    transition: ease-in-out all 1s;
+}
+
+.services{
+    margin-top: 100px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.services {
+    padding: 50px 0;
+}
+
+.services .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service {
+    text-align: center;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Példa szín */
+    transform: translateY(-2px); /* Enyhe mozgás felfelé */
+    transition: all 0.2s ease-in-out; /* Simább átmenet */
+  }
+  
+  .service:hover {
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.45); /* Finom árnyék */
+    transform: scale(1.02); /* Enyhe nagyítás */
+    transition: all 0.2s ease-in-out;
+  }
+
+  #imageGallery {
+    margin-top: 20px; /* Példa margó */
+  }
+
+  #progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #007bff; /* Példa szín */
+    z-index: 999;
+    transform-origin: 0%;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-out;
+  }
+  .fade-in-on-scroll {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .fade-in-on-scroll.visible {
+    opacity: 1;
+  }
+
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all ease-in-out 0.5s;
+  }
+  
+  #myBtn:hover {
+    transform: skew(15deg);
+  }
+
+
+  #Rolunkheadimg{
+    margin-top: 35px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+    max-width: 100%;
+  }
+
+  .Rolunkheadp{
+    
+    color: white;
+    font-family: myFirstFont;
+    padding: 10px;
+    letter-spacing: 1px;
+  }
+
+  #Bemutakozas{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #007bff;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  footer .container {
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  footer .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  footer .col-md-4 {
+    width: 33.33%;
+  }
+  
+  footer h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin-bottom: 5px;
+  }
+  
+  footer p {
+    margin-bottom: 10px;
+  }
+
+  .rolunkBemutat{
+    margin-bottom: 10px;
+
+    display: block;
+    align-items: flex-start;
+  }
+
+  .BOX>p{
+    color: white;
+  }
+
+.MyFooter {
+    padding: 20px 0;
+    text-align: left;
+  }
+
+  .FooterSorok {
+    margin-bottom: 20px;
+  }
+
+  .FooterSorok h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .FooterSorok p {
+    font-size: 0.9em;
+    line-height: 1.6;
+  }
+
+  .FooterSorok ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .FooterSorok ul li {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+  }
+
+  .FooterSorok svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+
+  .MyFooter .row {
+    width: 90%; /* Adjust width for responsiveness */
+    margin: 0 auto;
+  }
+
+  .MyFooter .row:last-child {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .FooterSorok {
+      text-align: center;
+    }
+
+    .MyFooter .row {
+      width: 95%;
+    }
+  }
+
+  .elreheto{
+
+      width: 50%;
+  }
+
+  #ajan{
+    text-align: center;
+  }
+
+  #gyik{
+    text-align: center;
+  }
+
+  #galeria{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #007bff;
+
+    
+  }
+
+  #carouselExampleSlidesOnly{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .elso>h1, .masodik>h1{
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 3px black;
+  }
+
+  .elso>p, .masodik>p{
+    font-size: large;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-shadow: 2px 3px black;
+  }
+
+  .elso>h2, .masodik>h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline;
+    color: white;
+    text-shadow: 2px 3px black;
+  }
+
+  hr{
+    margin-top: 100px;
+    border: none;
+  }
+
+  .fs-label{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline;
+    color: white;
+    font-size: large;
+    text-shadow: 1px 2px black;
+  }
+
+  form{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    margin-top: 35px;
+
+    margin-bottom: 15px;
+    
+  }
+
+  .fs-button{
+    border-radius: 25px;
+    padding: 5px 12px;
+    background-color: blue;
+    border: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    transition: all ease-in-out 0.5s;
+  }
+
+  .fs-button:hover{
+    background-color: white;
+    color: blue;
+    box-shadow: 2px 2px black;
+  }
+
+  #messagea{
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+    text-shadow: 2px 3px black;
+    font-family:fantasy;
+    text-decoration: underline;
+  }
+
+  #formP{
+    text-align: center;
+    color: white;
+    font-family:monospace;
+  }
+
+  #NewHR{
+    border: 1px black solid;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 0;
+  }
+
+  .szamolo{
+    padding-top:120px;
+    text-align: center;
+  }
+
+  .col-lg-5>h1{
+    color: white;
+    text-shadow: 2px 2px black;
+    text-decoration: underline;
+    font-style: italic;
+    font-family: fantasy;
+  }
+
+  #Vontato, #Partner, #years, #Country{
+    text-align: center;
+    font-size: larger;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: whitesmoke;
+    text-shadow: 3px 3px black;
+  }
+
+/*-----------------kész------------------*/
+
+
+@media (max-width: 1024px) {
+    #map {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .containera {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      display: flexbox;
+      padding-left: 20px;
+      box-sizing: border-box;
+      text-align: center;
+      position: sticky;
+  }
+
+  #carouselExampleSlidesOnly{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  #rolunkBemutat{
+    display: block;
+  }
+
+  hr{
+    margin-top: 0px;
+    height: 0px;
+  }
+
+  nav-link{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .elso>h2, .masodik>h2{
+    margin-left: -25px;
+  }
+
+  #Rolunkheadimg{
+    margin-left: 0px;
+  }
+
+  .elerh{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .col-md-6{
+    width: 100%;
+  }
+}
+
+@media (mix-width: 768px) {
+    .col-lg-6 {
+      width: 100%;
+      align-items: flex-start;
+      display: flex;
+      margin-top: -100px;
+    }
+
+    #szoveg{
+        width: 100%;
+        margin-left: 0px;
+        letter-spacing: 0px;
+    }
+
+    #map {
+      margin-left: 0px;
+      width: 100%;
+    }
+    .containera {
+      width: 100%;
+      margin: auto;
+      display: block;
+      text-align: center;
+      position: relative;
+
+    }
+
+    .services{
+        margin-bottom: 15px;
+    }
+
+    #szoveg{
+        font-size: 0.75rem;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    .HeadIMG { 
+      margin-top: -800px;
+    }
+
+  hr{
+    margin-top: 0px;
+    height: 0px;
+    }
+
+  #leiras{
+    display: block;
+    }
+
+  #rolunkBemutat{
+    display: block;
+    }
+
+  nav-link{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    }
+
+  #Rolunkheadimg{
+    margin-left: 0px;
+    }
+  }
+
+@media (min-width: 992px) { 
+    .row {
+      max-width: 1200px; 
+      margin: 0 auto; 
+    }
+    .col-lg-6 {
+      max-width: 800px; 
+      align-items: flex-start;
+      display: flex;
+    }
+    .col-lg-3 {
+      max-width: 300px; 
+    }
+
+  }
+
+@media (max-width: 576px) {
+    .FooterSorok {
+      text-align: center;
+    }
+    .MyFooter .row div{
+      width: 100%;
+      padding: 0;
+    }
+    .MyFooter .row div:not(:last-child){
+      margin-bottom: 20px;
+    }
+  }
+
+/*------------------------------------------*/
+
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+      height: 100%;
+    }
+}
+
+@media (max-width: 1650px) {
+    table, thead, tbody, th, td, tr {
+      width: 100%;
+      height: 100%;
+    }
+
+    hr{
+      margin-top: 0px;
+      height: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-link {
+        margin-right: 100px;
+    }
+
+    .services .container{
+    display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+    }
+}
+
+        .fs-form {
+            background-color: var(--light-grey-bg);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .fs-label {
+            color: lightblue;
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .fs-input, .fs-textarea {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            box-sizing: border-box; /* Padding és border a szélesség részét képezi */
+            font-size: 1rem;
+            color: var(--primary-dark);
+        }
+
+        .fs-textarea {
+            resize: vertical; /* Csak függőlegesen lehessen átméretezni */
+            min-height: 100px;
+        }
+
+        .fs-button {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
